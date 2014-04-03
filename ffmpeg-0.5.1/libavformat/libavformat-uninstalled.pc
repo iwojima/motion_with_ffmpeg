@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/home/stewart/iWork/Thrid_party/ffmpeg-0.5.1
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 52.31.0
+Requires: libavcodec = 52.20.1
+Conflicts:
+Libs: ${libdir}/libavformat.a   -lz -lbz2 -lm   -lasound -ldl -ldl -lasound -lasound
+Cflags: -I${includedir}
